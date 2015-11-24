@@ -1,42 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>ngugiephy</title>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header class="fullscreen">
-		<h1></h1>
-		<h2>SITE UNDER CONSTRUCTION</h2>
-		<!--
-		<nav>
-			<ul>
-				<li class="active"><div><a href="#">HOME</a></div></li>
-				<li><div><a href="#">GALLERY</a></div></li>
-				<li><div><a href="#">PROJECTS</a></div></li>
-				<li><div><a href="#">CONTACT</a></div></li>
-			</ul>
-		</nav>
-		-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nielsen Portal - Test</title>
 
-	</header>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link rel="icon" href="../../favicon.ico">
+    <script src="js/respond.min.js"></script>
+    <script src="js/ie-emulation-modes-warning.js"></script>
 
-	<div>
-		<article>
-			<header>
-				
-			</header>
-			<footer>
-				
-			</footer>
-			<content>
+  </head>
 
-			</content>
-			
-		</article>
-	</div>
-	
-</body>
-</html>
+  <body >
+
+  	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav nav-tabs nav-justified">
+            <li><a href="#home" data-toggle="tab"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <!--li><a href="#info-" data-toggle="tab"><span class="glyphicon glyphicon-user"></span> Employee Info</a></li-->
+            <!--li><a href="#salary-" data-toggle="tab"><span class="glyphicon glyphicon-usd"></span> Salary</a></li-->
+            <li><a href="#leave" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span> Leave</a></li>
+            <!--li><a href="#expense-" data-toggle="tab"><span class="glyphicon glyphicon-list"></span> Expense</a></li-->
+            <!--li><a href="#travel-" data-toggle="tab"><span class="glyphicon glyphicon-plane"></span> Travel</a></li-->
+            <!--li><a href="#loan-" data-toggle="tab"><span class="glyphicon glyphicon-transfer"></span> Loan</a></li-->
+          </ul>
+       
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="tab-content">
+    	<div class="tab-pane fade active in" id="home">
+    	<h1 align="center">Home</h1>
+    		<div class="container">
+            <form class="form-signin">
+            <h4 class="form-signin-heading">Please Log in</h4>
+                <label for="inputEmail" class="sr-only">Email Address</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>
+
+                <label type="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                
+
+                <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me">
+                    Remember me
+                </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+                
+            </form>
+    	</div>
+        </div>
+
+    	<!--div class="tab-pane fade" id="info">
+    		<h3>Employee Info</h3>
+    			<p></p>
+    	</div-->
+
+    	<!--div class="tab-pane fade" id="salary">
+    		<h3>Salary</h3>
+    			<p></p>
+    	</div-->
+
+    	<div class="tab-pane fade" id="leave">
+    		<h3 align="Center">Online Leave Form</h3>
+
+            <div class="container">
+                <!--div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  
+                </div-->
+                <div id="navbar" class="navbar">
+                  <ul class="nav nav-tabs nav-justified">
+                    <li><a href="#reg" data-toggle="tab">Registration Piont</a></li>
+                    <li><a href="#app" data-toggle="tab">Application</a></li>
+                    <li><a href="#man" data-toggle="tab">Send to Manager</a></li>
+                    
+                  </ul>
+               
+                </div><!--/.nav-collapse -->
+            </div>
+
+            <div class="tab-content">
+            
+                <!-- Registration Point -->
+                <div class=" tab-pane fade" id="reg">
+                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <h2>REGISTRATION POINT</h2>
+                        
+
+                        <label type="surname" class="sr-only">Surname</label>
+                        <input type="text" id="surname" class="form-control" placeholder="Surname" required autofocus>
+
+                        <label type="text" class="sr-only">First Name</label>
+                        <input type="text" id="firstname" class="form-control" placeholder="First name" required>
+
+
+
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="input-group">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Department <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">HR</a></li>
+                                  <li><a href="#">DATA INPUT</a></li>
+                                  <li><a href="#">DATA SCIENCE</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li><a href="#">OTHER</a></li>
+                                </ul>
+                              </div><!-- /btn-group -->
+                              <input type="text" class="form-control" aria-label="...">
+                            </div><!-- /input-group -->
+                          </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row -->
+
+                        <label type="text" class="sr-only">ID/Password</label>
+                        <input type="text" id="firstname" class="form-control" placeholder="ID/Password" required>
+
+                        <label type="text" class="sr-only">Contact</label>
+                        <input type="text" id="firstname" class="form-control" placeholder="Contact" required>
+
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <div class="input-group">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2015 Leave Days Due: <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">1</a></li>
+                                  <li><a href="#">2</a></li>
+                                  <li><a href="#">3</a></li>
+                                  <li><a href="#">4</a></li>
+                                  <li><a href="#">5</a></li>
+                                  <li><a href="#">6</a></li>
+                                  <li><a href="#">7</a></li>
+                                  <li><a href="#">8</a></li>
+                                  <li><a href="#">9</a></li>
+                                  <li><a href="#">10</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  
+                                </ul>
+                              </div><!-- /btn-group -->
+                              <input type="text" class="form-control" aria-label="...">
+                            </div><!-- /input-group -->
+                          </div><!-- /.col-lg-6 -->
+                        </div><!-- /.row -->
+
+                        <p><a href="" class="btn btn-default">SUBMIT</a></p>
+
+                    </div>
+                </div>
+                
+
+                <!-- application  -->
+                <div class="tab-pane fade" id="app">
+                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <h2>APPLICATION</h2>
+                        <P>show days due on application</P>
+                        <p>show last leave date</p>
+
+                        <label type="text" class="sr-only"></label>
+                        <input type="text" id="startdate" class="form-control" placeholder="Leave Start Date" required>
+
+                        <label type="text" class="sr-only">Contact</label>
+                        <input type="text" id="end date" class="form-control" placeholder="Leave End Date" required>
+
+                        
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" aria-label="...">
+                          </span>
+                          <p>Annual</p>
+                        </div><!-- /input-group -->
+
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" aria-label="...">
+                          </span>
+                          <p>Unpaid</p>
+                        </div><!-- /input-group -->
+
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" aria-label="...">
+                          </span>
+                          <p>Study</p>
+                        </div><!-- /input-group -->
+
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" aria-label="...">
+                          </span>
+                          <p>Compassionate</p>
+                        </div><!-- /input-group -->
+
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" aria-label="...">
+                          </span>
+                          <p>Paternity</p>
+                        </div><!-- /input-group -->
+
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" aria-label="...">
+                          </span>
+                          <p>Maternity</p>
+                        </div><!-- /input-group -->
+
+                        <p><a href="" class="btn btn-default"></a></p>
+                        <br>
+                        <p>Balance after leave application</p>
+                        <p>Recommended next leave day</p>
+                        
+                    </div>
+                </div>
+
+                <!-- MANAGER -->
+                <div class="tab-pane fade" id="man">
+                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <h2>SEND TO MANAGER</h2>
+
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select your Manager <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Manager A</a></li>
+                                  <li><a href="#">Manager B</a></li>
+                                  <li><a href="#">Manager C</a></li>
+                                  <li><a href="#">HR</a></li>
+                                  <li role="separator" class="divider"></li>
+                                </ul>
+                            </div><!-- /btn-group -->
+                              <input type="text" class="form-control" aria-label="...">
+                        </div><!-- /input-group -->
+
+                        <p><small><em> Select HR only if your Manager is not in the list.</em></small></p>
+
+                        <p><a href="" class="btn btn-default"> Submit  </a></p>
+
+                        <p>Indicate approval Status:</p>
+
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" aria-label="...">
+                          </span>
+                          <p>Npt Checked, Resubmit</p>
+                        </div><!-- /input-group -->
+
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" aria-label="...">
+                          </span>
+                          <p>Checked and Approved</p>
+                        </div><!-- /input-group -->
+
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <input type="checkbox" aria-label="...">
+                          </span>
+                          <p>Not Approved</p>
+                        </div><!-- /input-group -->
+
+                        <HR>
+
+                        <p>At Managers level we will need to see</p>
+                        <ol>
+                            <li><p>Employee Details.</p></li>
+                            <li><p>Last Leave Day.</p></li>
+                            <li><p>Balance of Leave Days.</p></li>
+                            <li><p>Show a small graph of how leave days have been taken per month by all employees.</p></li>
+                            <li><p>Recomend a leave day to employees via mail.</p></li>
+                        </ol>
+
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+
+    <footer>
+    	
+    </footer>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    	$(function () {
+    		$('.nav-tabs a:first').tab('show');
+    	});
+
+    </script>
+  </body>
+ </html>
