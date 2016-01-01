@@ -1,0 +1,22 @@
+html {
+	}
+
+body {
+	
+}
+
+div.headr {
+
+	background-image: url(../img/gall/web/bg/tex-grad-green.jpg); 
+	height: 100vh;
+	
+	background-size: cover;
+	margin-top:0;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+p {
+	}
